@@ -8,4 +8,4 @@ toc: true
 
 # Список агентов
 
-[flexbox utilities]({{ site.baseurl }}/agents/agent1.md
+[flexbox utilities](./agents/agent1.md)
