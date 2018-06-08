@@ -1,14 +1,10 @@
----
-layout: docs
-title: Utilities for layout
-description: For faster mobile-friendly and responsive development, Bootstrap includes dozens of utility classes for showing, hiding, aligning, and spacing content.
-group: layout
-toc: true
----
-
 # Список агентов
 
 [YandexExport](./agents/YandexExport.md)
+
+# Список событий
+
+[createBrand](./agents/createBrand.md)
 
 # Подключить все содержимое папок
 
