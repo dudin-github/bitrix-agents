@@ -1,8 +1,6 @@
 # YandexExport
 
 ```php
-<?php
-
 function YandexExport($exportId, $xmlFile)
 {
     CModule::IncludeModule("catalog");
