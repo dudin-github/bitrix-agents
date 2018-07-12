@@ -4,7 +4,10 @@
 
 # Список событий
 
+[changeIBElementProperty](./events/changeIBElementProperty.md)
 [createBrand](./events/createBrand.md)
+[myCurrencyFormat](./events/myCurrencyFormat.md)
+[sendOrderMessage](./events/sendOrderMessage.md)
 
 # Подключить все содержимое папок
 
