@@ -1,13 +1,13 @@
 # YandexExport
 
 ```php
-AddEventHandler("iblock", "OnAfterIBlockElementUpdate", "ChangeIBElementProperty");
+AddEventHandler("iblock", "OnAfterIBlockElementUpdate", "changeIBElementProperty");
+AddEventHandler("iblock", "OnAfterIBlockElementAdd", "changeIBElementProperty");
 
-AddEventHandler("iblock", "OnAfterIBlockElementAdd", "ChangeIBElementProperty");
-
-function ChangeIBElementProperty(&$arFields)
+function changeIBElementProperty(&$arFields)
 {
     CModule::IncludeModule('iblock');
+    
     $IBLOCK_ID = 1;
     $PROPERTY_CODE = 1;
 

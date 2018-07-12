@@ -1,6 +1,6 @@
 # Список агентов
 
-[YandexExport](./agents/YandexExport.md)
+[exportToYandex](./agents/exportToYandex.md)
 
 # Список событий
 

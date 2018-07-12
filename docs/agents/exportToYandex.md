@@ -1,7 +1,7 @@
-# YandexExport
+# exportToYandex
 
 ```php
-function YandexExport($exportId, $xmlFile)
+function exportToYandex($exportId, $xmlFile)
 {
     CModule::IncludeModule("catalog");
     CCatalogExport::PreGenerateExport($exportId);
@@ -15,12 +15,12 @@ function YandexExport($exportId, $xmlFile)
 }
 
 // YM export from site "Site1"
-function yandexExportForSite1()
+function exportToYandexForSite1()
 {
     $yandexProfileID = 1;
     $yandexFileName = "yandex_site1";
 
-    YandexExport($yandexProfileID, "yandex_site1");
-    return "yandexExportForSite1();";
+    exportToYandex($yandexProfileID, "yandex_site1");
+    return "exportToYandexForSite1();";
 }
 ```

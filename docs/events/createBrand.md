@@ -26,16 +26,17 @@ function createBrand(&$arFields)
                 Array("ID", "NAME")
             );
             /* Если бренд не найден - создаем */
-            if (!$res) {
+            if (!$res->GetNext()) {
                 $brandElement = new CIBlockElement;
                 $arLoadProductArray = Array(
                     "IBLOCK_SECTION_ID" => false,
-                    "IBLOCK_ID"      => $BRAND_IBLOCK_ID,
-                    "NAME"           => $arBrandProperty["VALUE"],
-                    "ACTIVE"         => "Y"
+                    "IBLOCK_ID" => $BRAND_IBLOCK_ID,
+                    "NAME" => $arBrandProperty["VALUE"],
+                    "CODE" => Cutil::translit($arBrandProperty["VALUE"], "ru", array("replace_space" => "-", "replace_other" => "-")),
+                    "ACTIVE" => "Y"
                 );
                 $brandID = $brandElement->Add($arLoadProductArray);
-                if(!$brandID) {
+                if (!$brandID) {
                     AddMessage2Log("Can't create a brand: " . $brandElement->LAST_ERROR);
                 }
             }
