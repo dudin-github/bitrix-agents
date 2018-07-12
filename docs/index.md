@@ -4,7 +4,7 @@
 
 # Список событий
 
-[createBrand](./agents/createBrand.md)
+[createBrand](./events/createBrand.md)
 
 # Подключить все содержимое папок
 
