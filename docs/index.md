@@ -1,6 +1,7 @@
 # Список агентов
 
 [exportToYandex](./agents/exportToYandex.md)
+[createSitemap](./agents/createSitemap.md)
 
 # Список событий
 
